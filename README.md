@@ -85,11 +85,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Components
 
- Components
+Components
 
 1. Should adhere ReUsability, Nesting, Configuration
-2. There are two kinds of components. 
-    1. class  2.function
+2. There are two kinds of components.
+   1. class 2.function
 3. Generally class components are well structured, better organized and you can
- keep the state in the component as well, lifecycle hooks and other goodies. functional Components as far as I understand are simple display components not much used for interactivity.
+   keep the state in the component as well, lifecycle hooks and other goodies. functional Components as far as I understand are simple display components not much used for interactivity.
 
+### Rules for class Component
+
+    a) Always extend it with React.Component class
+    b) Must have *render()* method.
+
+### Rules of state System.
+
+    a) Only usable with class based components , duh -- Techniacally we can use with state component, but makes it challenging.
+    b) don't confuse it with prop system.
+    c) JS Object containing data relevant to that component.
+    d) updating state - instantly rerenders the component.
+    e) talking of setting state - CAN ONLY BE UPDATED   via - `setStage()` method and must be initialized when component is created.
